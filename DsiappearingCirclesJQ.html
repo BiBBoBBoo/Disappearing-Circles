@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Disappearing Circles</title>
+
+        <style>
+
+            body{
+                background-color: tomato;
+            }
+            .circle{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                margin: 30px;
+                float: left;
+            }
+            h2{
+                padding-left: 40%;
+                text-decoration: underline;
+                margin-bottom: 70px;
+            }
+           
+        </style>
+
+    </head>
+    <body>
+
+        <h2 style="color: rgb(7, 70, 70);">The Disappearing Circles: </h2>
+        <div class="circle" id="red" style="background-color: red;"></div>
+        <div class="circle" id="blue" style="background-color: blue;"></div>
+        <div class="circle" id="yellow" style="background-color: yellow;"></div>
+
+        <script>
+
+            $("#red").click(function(){
+                $("#red").css("display", "none")
+                alert("Red Circle Disappeared Successfully!!")
+            })
+            $("#blue").click(function(){
+                $("#blue").css("display", "none")
+                alert("Blue Circle Disappeared Successfully!!")
+            })
+            $("#yellow").click(function(){
+                $("#yellow").css("display", "none")
+                alert("Yellow Circle Disappeared Successfully!!")
+
+            })
+
+        </script>
+
+    </body>
+</html>
