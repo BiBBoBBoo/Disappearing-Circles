@@ -34,19 +34,10 @@
         <div class="circle" id="yellow" style="background-color: yellow;"></div>
 
         <script>
-
-            $("#red").click(function(){
-                $("#red").css("display", "none")
-                alert("Red Circle Disappeared Successfully!!")
-            })
-            $("#blue").click(function(){
-                $("#blue").css("display", "none")
-                alert("Blue Circle Disappeared Successfully!!")
-            })
-            $("#yellow").click(function(){
-                $("#yellow").css("display", "none")
-                alert("Yellow Circle Disappeared Successfully!!")
-
+            
+            $(".circle").click(function(){
+                $(this).css("display", "none")
+                alert("The " + $(this).attr("id") + " circle has disappeared!!")
             })
 
         </script>
